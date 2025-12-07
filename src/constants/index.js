@@ -59,12 +59,12 @@ const MY_STACK = {
         { name: "JavaScript", icon: "/images/logos/js.png" },
         { name: "TypeScript", icon: "/images/logos/ts.png" },
         { name: "React", icon: "/images/logos/react.png" },
-        { name: "Next.js", icon: "/images/logos/next.svg" },
+        { name: "Next.js", icon: "/images/logos/next.png" },
         { name: "Redux", icon: "/images/logos/redux.png" },
-        { name: "Tailwind CSS", icon: "/images/logos/tailwind.svg" },
-        { name: "GSAP", icon: "/images/logos/gsap.svg" },
-        { name: "Framer Motion", icon: "/images/logos/framer.svg" },
-        { name: "Sass", icon: "/images/logos/sass.svg" },
+        { name: "Tailwind CSS", icon: "/images/logos/tailwind.png" },
+        { name: "GSAP", icon: "/images/logos/gsap.png" },
+        { name: "Framer Motion", icon: "/images/logos/framer-motion.png" },
+        { name: "Sass", icon: "/images/logos/sass.png" },
         { name: "Bootstrap", icon: "/images/logos/bootstrap.svg" },
     ],
 
@@ -76,15 +76,15 @@ const MY_STACK = {
 
     database: [
         { name: "MySQL", icon: "/images/logos/mysql.svg" },
-        { name: "PostgreSQL", icon: "/images/logos/postgresql.svg" },
-        { name: "MongoDB", icon: "/images/logos/mongo.svg" },
-        { name: "Prisma", icon: "/images/logos/prisma.svg" },
+        { name: "PostgreSQL", icon: "/images/logos/postgreSQL.png" },
+        { name: "MongoDB", icon: "/images/logos/mongodb.svg" },
+        { name: "Prisma", icon: "/images/logos/prisma.png" },
     ],
 
     tools: [
         { name: "Git", icon: "/images/logos/git.svg" },
         { name: "Docker", icon: "/images/logos/docker.svg" },
-        { name: "AWS", icon: "/images/logos/aws.svg" },
+        { name: "AWS", icon: "/images/logos/aws.png" },
     ],
 };
 
