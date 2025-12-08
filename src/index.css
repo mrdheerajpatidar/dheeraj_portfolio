@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: white;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   font-family: "Mona Sans", sans-serif;
 }
 
@@ -98,6 +98,21 @@ section {
 
   .hero-badge {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+  }
+  .hero-chip {
+    @apply px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white-50 backdrop-blur hover:border-white/30 transition-colors duration-300 text-sm md:text-base;
+  }
+
+  .stat-chip {
+    @apply p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur;
+  }
+
+  .stat-number {
+    @apply text-3xl font-semibold;
+  }
+
+  .stat-label {
+    @apply text-sm text-white-50 mt-1 leading-snug;
   }
 
   .hero-3d-layout {
@@ -359,6 +374,123 @@ section {
       }
     }
   }
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #6ce5ff, #8b7bff, #38f7b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero-glow--one {
+  top: -10%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(75, 178, 255, 0.7), rgba(12, 29, 48, 0.6));
+}
+
+.hero-glow--two {
+  bottom: -20%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(74, 222, 128, 0.55), rgba(9, 16, 26, 0.7));
+}
+
+.custom-cursor {
+  pointer-events: none;
+}
+
+.cursor-dot,
+.cursor-ring {
+  @apply fixed rounded-full transition-all duration-300 ease-out;
+  background: white;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  z-index: 120;
+}
+
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  z-index: 119;
+}
+
+.preloader {
+  backdrop-filter: blur(14px);
+}
+
+.preloader__backdrop {
+  @apply absolute inset-0;
+  background: radial-gradient(circle at 20% 20%, #182034 0%, transparent 35%),
+    radial-gradient(circle at 80% 10%, #24395b 0%, transparent 30%),
+    radial-gradient(circle at 50% 60%, #1b2c46 0%, transparent 40%),
+    #05060a;
+  opacity: 0.95;
+}
+
+.preloader__content {
+  @apply relative z-[2] text-center flex flex-col gap-4 px-6 py-10 rounded-3xl border border-[#1f2c3f] bg-[#070a12]/60 backdrop-blur-xl shadow-2xl;
+}
+
+.preloader__tag {
+  @apply uppercase tracking-[0.3em] text-xs text-blue-50;
+  letter-spacing: 0.4em;
+}
+
+.preloader__value {
+  @apply text-6xl md:text-7xl font-bold tracking-tight;
+}
+
+.preloader__unit {
+  @apply text-xl text-blue-50 ml-1;
+}
+
+.preloader__footnote {
+  @apply text-sm text-blue-50;
+}
+
+.preloader__bar {
+  @apply w-80 max-w-full h-2 rounded-full bg-[#111827] overflow-hidden relative mx-auto;
+}
+
+.preloader__bar span {
+  @apply absolute left-0 top-0 h-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500;
+  transition: width 0.4s ease;
+}
+
+.about-photo {
+  @apply flex flex-col gap-4 items-start;
+}
+
+.about-photo__frame {
+  @apply rounded-3xl p-[2px] bg-gradient-to-br from-white/20 via-cyan-400/30 to-blue-600/20 shadow-2xl transition-transform duration-500;
+}
+
+.about-photo__frame:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.about-photo__img {
+  @apply rounded-[28px] w-full h-full object-cover bg-black/60;
+}
+
+.about-photo__meta {
+  @apply space-y-1;
 }
 
 /* Hero text slider starts */

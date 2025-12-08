@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { navLinks } from "../constants";
 import {GradientText} from "./reactBits/ReactBits.jsx";
 
-const NavBar = () => {
+const NavBar = ({ locked = false }) => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,7 +24,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
+    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"} ${locked ? "pointer-events-none opacity-60" : ""}`}>
       <div className="inner">
           <a href="#hero" className="logo flex gap-2 items-center">
               <span className="font-semibold tracking-wide">Dheeraj's</span>

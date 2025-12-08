@@ -13,7 +13,7 @@ const navLinks = [
   },
     {
         name: "Projects",
-        link: "#projects",
+        link: "#work",
     },
   {
     name: "Testimonials",
@@ -39,18 +39,18 @@ const words = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Performance & UX First",
+    desc: "Optimizing Lighthouse scores, reducing bundle sizes, and keeping interactions smooth.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Clear Collaboration",
+    desc: "Transparent async updates, proactive risk flags, and design-dev alignment.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Delivery Discipline",
+    desc: "Shipping incrementally with clean architecture so teams can scale fast.",
   },
 ];
 
@@ -124,39 +124,51 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Leading builds for startup clients — shipping CMS sites, shopping apps, and subscription products with clean UI and resilient backends.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Contract-Based & Freelance Developer",
+    date: "Jul 2025 – Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Delivered responsive web/mobile builds (CMS, shopping apps, subscription products) with React, Node, and Firebase.",
+      "Shipped full-stack deployments to Vercel/Play Store with analytics, auth, and payments.",
+      "Implemented reusable UI systems to cut future delivery time and keep performance high.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Built modules that improved SEO and reliability for B2B platforms like GlobalTradePlaza.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Full Stack Engineer Trainee – Qualzee Consultancy",
+    date: "Nov 2024 – Jul 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built discussion board & calendar scheduler modules in React/Next.js with API integrations.",
+      "Improved SEO & load speed for GlobalTradePlaza with SSR, caching, and asset optimizations.",
+      "Collaborated across Agile sprints to keep releases predictable and regression-free.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Delivered gaming platforms with live result integrations and responsive dashboards.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Software Developer Intern (React.js) – Codes For Tomorrow",
+    date: "Jul 2024 – Sep 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Developed gaming platforms (casino/betting) with Redux-driven state and API polling.",
+      "Optimized dashboards for mobile and desktop with Tailwind CSS.",
+      "Integrated live results to improve engagement and reduce UI lag.",
+    ],
+  },
+  {
+    review: "Strengthened Java/MySQL backends with faster queries and improved client-facing UI.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Java Backend Trainee – Ypsilon IT Solutions",
+    date: "Feb 2023 – Jul 2023",
+    responsibilities: [
+      "Implemented backend logic in Java + MySQL and optimized SQL queries for 50% faster execution.",
+      "Elevated UI/UX for client portals, increasing satisfaction by ~25%.",
+      "Collaborated with cross-functional teams to keep delivery timelines predictable.",
     ],
   },
 ];
@@ -178,46 +190,25 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Product Manager, B2B Marketplace",
+    mentions: "@globaltradeplaza",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Dheeraj lifted our SEO and performance while building new modules. Pages feel faster, and his communication kept the roadmap clear.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Founder, Gaming Platform",
+    mentions: "@royalmega",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "We shipped faster with Dheeraj. He integrated live results, stabilized dashboards, and kept performance solid under traffic spikes.",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Ops Lead, Services Startup",
+    mentions: "@bpo-cms",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "He delivered a CMS-driven site with clean UI, docs, and handoff. Zero surprises in production — great engineering discipline.",
     imgPath: "/images/client2.png",
-  },
-  {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
-    review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
   },
 ];
 

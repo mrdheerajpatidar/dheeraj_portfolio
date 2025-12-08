@@ -46,7 +46,7 @@ const TechStack = () => {
 
     return (
 
-            <section className="skill-section"  id="my-stack" ref={containerRef}>
+            <section className="skill-section"  id="skills" ref={containerRef}>
                 <div className="container mx-auto px-4">
 
                     <div className="skill-title">
