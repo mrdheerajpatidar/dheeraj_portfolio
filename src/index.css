@@ -186,7 +186,12 @@ section {
 
       }
   }
-
+    .skill-section{
+        @apply flex flex-col items-center justify-center gap-8;
+        .skill-title{
+            @apply mb-20 ;
+        }
+    }
 
   .app-showcase {
     @apply w-full px-5 md:px-20 py-10 md:py-20 flex items-center justify-center ;
@@ -218,8 +223,6 @@ section {
         }
       }
     }
-
-
     .project-list-wrapper {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
@@ -236,8 +239,9 @@ section {
       }
     }
   }
+
    .logo-showcase-sider{
-       @apply w-full px-5 md:px-20 py-10 md:py-20
+       @apply w-full px-5 md:px-20 py-10 md:py-20 md:mt-10;
    }
   .cta-wrapper {
     @apply relative z-20 cursor-pointer;
