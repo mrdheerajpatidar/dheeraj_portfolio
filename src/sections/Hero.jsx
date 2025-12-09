@@ -65,11 +65,6 @@ const Hero = () => {
             <span className="text-sm">Indore, India · Frontend-focused Full Stack Developer</span>
           </div>
 
-          <div className="hero-text gap-3">
-            <h1 className="hero-headline">Hi, I’m <span className="gradient-text">Dheeraj Patidar</span></h1>
-            <h1 className="hero-headline">I build fast, reliable product experiences</h1>
-            <h1 className="hero-headline">with modern web tech.</h1>
-          </div>
 
           <div className="text-white-50 md:text-xl relative z-10 leading-relaxed max-w-3xl">
             <DecryptedText

@@ -1,31 +1,12 @@
 import React from "react";
 import { BlurText } from "../components/reactBits/ReactBits.jsx";
+import { certifications } from "../constants";
 
-const summary = [
-  "Frontend-focused Full Stack Developer with 1.5+ years building scalable, high-performance products.",
-  "Specialized in React/Next.js, performant UI, and API-driven experiences with clean architecture.",
-  "Delivered 10+ launches across gaming, B2B, and SaaS; improved app performance by up to 40%.",
-];
-
-const primarySkills = [
-  "React.js", "Next.js", "Redux", "TypeScript", "Tailwind CSS", "Bootstrap",
-  "Java", "REST APIs", "MySQL", "Sequelize", "Git", "Postman",
-];
-
-const additionalSkills = [
-  "Node.js", "Express.js", "PostgreSQL", "Firebase", "Electron.js",
-  "C / C++ / Java", "Responsive design", "SEO optimization", "Agile execution",
-];
-
-const education = [
-  { label: "B.Sc. Computer Science – 2022", place: "Mahatma Gandhi College, Sehore" },
-  { label: "Higher Secondary – 2018", place: "Sahara Public School, Kalapipal (MP Board)" },
-  { label: "High School – 2016", place: "Sahara Public School, Kalapipal (CBSE)" },
-];
-
-const certifications = [
-  { name: "Foundations of UX Design – Google (2023)" },
-  { name: "Java Certification – Universal Informatics (2023)" },
+const summaryPoints = [
+  "Frontend-focused Full Stack Developer (Indore, India) with 1.5+ years experience.",
+  "Shipped 10+ real products across gaming, B2B, and SaaS with React/Next.js and Node.",
+  "Performance-minded: improved app speed by up to 40% via clean architecture and profiling.",
+  "Strong in responsive UI, API integration, state management, and client communication.",
 ];
 
 const About = () => {
@@ -36,7 +17,7 @@ const About = () => {
       <div className="relative">
         <div className="w-full mb-10">
           <BlurText
-            text="I build fast, reliable, and purposeful interfaces backed by clean engineering."
+            text="Clean, fast, and purposeful experiences that feel premium and stay reliable."
             delay={50}
             animateBy="words"
             direction="top"
@@ -50,71 +31,51 @@ const About = () => {
               <div className="about-photo__frame">
                 <img src="/images/me/img1.jpg" alt="Dheeraj Patidar" className="about-photo__img" />
               </div>
-              <div className="about-photo__meta">
+              <div className="about-photo__meta space-y-2">
                 <p className="text-sm text-blue-50 uppercase tracking-[0.25em]">Dheeraj Patidar</p>
                 <p className="text-lg font-semibold">Frontend-focused Full Stack Developer</p>
-                <p className="text-blue-50">Indore, India · Open to remote</p>
-                <p className="text-white-50 mt-2">📧 dheerajpatidar.developer@gmail.com</p>
-                <p className="text-white-50">📞 7389276575</p>
-                <p className="text-white-50">🔗 linkedin.com/in/dheerajpatidar1712</p>
+                <div className="text-white-50 text-sm space-y-1">
+                  <p>📞 7389276575</p>
+                  <p>📧 dheerajpatidar.developer@gmail.com</p>
+                  <p>📍 Indore, India</p>
+                  <p>🔗 linkedin.com/in/dheerajpatidar1712</p>
+                  <p>🌐 dheeraj-portfolio-one.vercel.app</p>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-2 flex flex-col gap-8">
             <div className="card-border rounded-2xl p-6 md:p-8 bg-black/60 backdrop-blur">
-              <h3 className="text-2xl font-semibold mb-4">Summary</h3>
+              <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
               <div className="flex flex-col gap-3 text-white-50 leading-relaxed">
-                {summary.map((point) => (
+                {summaryPoints.map((point) => (
                   <p key={point} className="text-base md:text-lg">{point}</p>
                 ))}
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="card-border rounded-2xl p-6 bg-black/60 backdrop-blur">
-                <h4 className="text-xl font-semibold mb-3">Primary Skills</h4>
-                <div className="flex flex-wrap gap-2">
-                  {primarySkills.map((item) => (
-                    <span key={item} className="px-3 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
-                      {item}
-                    </span>
-                  ))}
+            <div className="card-border rounded-2xl p-6 bg-black/60 backdrop-blur">
+              <h4 className="text-xl font-semibold mb-3">Education & Certifications</h4>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <p className="font-semibold">B.Sc. Computer Science – 2022</p>
+                  <p className="text-sm text-white-50">Mahatma Gandhi College, Sehore</p>
                 </div>
-              </div>
-
-              <div className="card-border rounded-2xl p-6 bg-black/60 backdrop-blur">
-                <h4 className="text-xl font-semibold mb-3">Additional Skills</h4>
-                <div className="flex flex-wrap gap-2">
-                  {additionalSkills.map((item) => (
-                    <span key={item} className="px-3 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
-                      {item}
-                    </span>
-                  ))}
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <p className="font-semibold">Higher Secondary – 2018</p>
+                  <p className="text-sm text-white-50">Sahara Public School, Kalapipal (MP Board)</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="card-border rounded-2xl p-6 bg-black/60 backdrop-blur">
-                <h4 className="text-xl font-semibold mb-3">Education</h4>
-                <div className="flex flex-col gap-3 text-white-50">
-                  {education.map((item) => (
-                    <div key={item.label}>
-                      <p className="font-semibold">{item.label}</p>
-                      <p className="text-sm text-blue-50">{item.place}</p>
-                    </div>
-                  ))}
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <p className="font-semibold">High School – 2016</p>
+                  <p className="text-sm text-white-50">Sahara Public School, Kalapipal (CBSE)</p>
                 </div>
-              </div>
-
-              <div className="card-border rounded-2xl p-6 bg-black/60 backdrop-blur">
-                <h4 className="text-xl font-semibold mb-3">Certifications</h4>
-                <div className="flex flex-col gap-3 text-white-50">
-                  {certifications.map((cert) => (
-                    <p key={cert.name}>{cert.name}</p>
-                  ))}
-                </div>
+                {certifications.map((cert) => (
+                  <div key={cert.title} className="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <p className="font-semibold">{cert.title}</p>
+                    <p className="text-sm text-white-50">{cert.year}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

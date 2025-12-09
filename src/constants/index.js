@@ -32,10 +32,6 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-
-
-
-
 const abilities = [
   {
     imgPath: "/images/seo.png",
@@ -124,39 +120,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Leading builds for startup clients — shipping CMS sites, shopping apps, and subscription products with clean UI and resilient backends.",
+    review: "Building full-stack solutions for startups: CMS sites, shopping apps, and subscription products with React, Node, Firebase, and Vercel/Play Store delivery.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Contract-Based & Freelance Developer",
     date: "Jul 2025 – Present",
     responsibilities: [
-      "Delivered responsive web/mobile builds (CMS, shopping apps, subscription products) with React, Node, and Firebase.",
-      "Shipped full-stack deployments to Vercel/Play Store with analytics, auth, and payments.",
-      "Implemented reusable UI systems to cut future delivery time and keep performance high.",
+      "Delivered responsive websites & mobile apps for startups with React.js, Node.js, Firebase.",
+      "Built CMS-based BPO company website and Patel Masala shopping app.",
+      "Launched template-based subscription app with full-stack deployments to Vercel/Play Store.",
     ],
   },
   {
-    review: "Built modules that improved SEO and reliability for B2B platforms like GlobalTradePlaza.",
+    review: "Contributed to GlobalTradePlaza and enterprise apps with React/Next.js, Electron, Node, Tailwind, and SEO/performance improvements.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Engineer Trainee – Qualzee Consultancy",
     date: "Nov 2024 – Jul 2025",
     responsibilities: [
-      "Built discussion board & calendar scheduler modules in React/Next.js with API integrations.",
-      "Improved SEO & load speed for GlobalTradePlaza with SSR, caching, and asset optimizations.",
-      "Collaborated across Agile sprints to keep releases predictable and regression-free.",
+      "Built discussion board & calendar scheduler modules for GlobalTradePlaza and work-log systems.",
+      "Improved SEO & performance for GlobalTradePlaza using SSR and asset optimizations.",
+      "Developed for Dubai law firm and SaaS apps using React.js, Electron.js, Next.js, Node.js, Tailwind CSS.",
     ],
   },
   {
-    review: "Delivered gaming platforms with live result integrations and responsive dashboards.",
+    review: "Built gaming platforms (Royal Mega, betting apps) with live results and responsive dashboards.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "Software Developer Intern (React.js) – Codes For Tomorrow",
     date: "Jul 2024 – Sep 2024",
     responsibilities: [
-      "Developed gaming platforms (casino/betting) with Redux-driven state and API polling.",
-      "Optimized dashboards for mobile and desktop with Tailwind CSS.",
-      "Integrated live results to improve engagement and reduce UI lag.",
+      "Developed gaming/betting platforms with Redux state and API integrations (Royal Mega).",
+      "Designed responsive UI and optimized dashboards for speed and stability.",
+      "Integrated real-time result APIs to boost engagement and reduce UI lag.",
     ],
   },
   {
@@ -212,6 +208,69 @@ const testimonials = [
   },
 ];
 
+const projectsShowcase = [
+  {
+    id: 1,
+    title: "GlobalTradePlaza",
+    shortDescription: "B2B marketplace with SEO-first SSR and API-driven modules.",
+    fullDescription:
+      "Comprehensive marketplace connecting importers/exporters. SSR for SEO uplift, REST integrations, and uptime-focused deployments.",
+    tech: ["React.js", "Next.js", "Node.js", "Tailwind CSS"],
+    url: "https://globaltradeplaza.com/",
+    type: "B2B Marketplace",
+    features: ["SSR SEO boost", "Supplier directory", "API integrations", "99% uptime"],
+  },
+  {
+    id: 2,
+    title: "Royal Mega",
+    shortDescription: "Gaming platform with live results and responsive dashboards.",
+    fullDescription:
+      "Interactive gaming experience with Redux-driven state, live result APIs, and responsive UI for web and mobile.",
+    tech: ["React.js", "Redux", "Tailwind CSS"],
+    url: "https://www.royalmega.com/",
+    type: "Gaming Platform",
+    features: ["Live result APIs", "Responsive UI", "State management", "Engagement boost"],
+  },
+  {
+    id: 3,
+    title: "Qampus",
+    shortDescription: "Communication & work tracking SaaS (Electron + React).",
+    fullDescription:
+      "Cross-platform desktop app with messaging, calendars, leave management, and productivity tracking.",
+    tech: ["React.js", "Node.js", "PostgreSQL", "Electron.js"],
+    url: "",
+    type: "Desktop SaaS",
+    features: ["Real-time messaging", "Calendars", "Meetings", "Lag reduction"],
+  },
+  {
+    id: 4,
+    title: "Samaagum",
+    shortDescription: "Cross-platform mobile + web app with real-time features.",
+    fullDescription:
+      "React Native + React.js build with Node/Express backend; responsive layouts and live functionality across devices.",
+    tech: ["React Native", "React.js", "Node.js", "Express.js"],
+    url: "https://play.google.com/store/apps/details?id=com.samagam",
+    type: "Mobile & Web",
+    features: ["Cross-platform", "Real-time", "User management", "Responsive design"],
+  },
+  {
+    id: 5,
+    title: "Law Firms Management System",
+    shortDescription: "Enterprise legal management with invoices and PDF flows.",
+    fullDescription:
+      "Enterprise platform with responsive UI, invoice systems, complex calculation logic, and PDF viewing/printing (NDA-limited details).",
+    tech: ["React.js", "Node.js", "Express.js", "PDF.js", "MySQL"],
+    url: "",
+    type: "Enterprise",
+    features: ["Invoice management", "PDF generation", "Document handling", "Responsive UI"],
+  },
+];
+
+const certifications = [
+  { title: "Foundations of UX Design – Google", year: "2023" },
+  { title: "Java Certification – Universal Informatics", year: "2023" },
+];
+
 const socialImgs = [
   {
     name: "insta",
@@ -239,6 +298,8 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
-    MY_STACK,
+  MY_STACK,
   navLinks,
+  projectsShowcase,
+  certifications,
 };

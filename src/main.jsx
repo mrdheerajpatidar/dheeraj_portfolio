@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
         duration: 1.2,
       }}
     >
-      <App />
+    <App />
     </ReactLenis>
   </StrictMode>,
 );
